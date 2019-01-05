@@ -5,6 +5,7 @@ const taskList = document.querySelector('.collection');
 const clearBtn = document.querySelector('.clear-tasks');
 const filter = document.querySelector('#filter');
 const taskInput = document.querySelector('#task');
+const delitem = document.querySelector('.delete-item');
 
 //Load All event listeners
 
@@ -27,7 +28,7 @@ function addTask(e) {
     const li = document.createElement('li');
     //add class
     li.className = 'collection-item';
-    //create text nodeand appendto li
+    //create text node and appendto li
     li.appendChild(document.createTextNode(taskInput.value));
     // Create new link element
     const link = document.createElement('a');
@@ -41,9 +42,25 @@ function addTask(e) {
     //append li to ui
     taskList.appendChild(li);
 
-    console.log(li);
     //clear input
     taskInput.value = '';
 
     e.preventDefault();    
+}
+
+
+//Remove the 
+document.body.addEventListener('click',deleteItem1);
+
+function deleteItem1(e) {
+    
+    
+    if (e.target.parentElement.className === 'delete-item secondary-content') {
+       
+        console.log("hello");
+        e.target.parentElement.parentElement.remove();
+        
+    }
+    
+    
 }
