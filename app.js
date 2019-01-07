@@ -53,7 +53,7 @@ function getTasks(){
 
         //append li to ui
         taskList.appendChild(li);
-    })
+    });
 
 }
 
@@ -137,7 +137,7 @@ function removeTaskFromLocalStorage(taskItem)
         }
     });
 
-    localStorage.setItem('tasks',JSON.stringify(tasks))
+    localStorage.setItem('tasks',JSON.stringify(tasks));
 }
 
 //cleartask
@@ -147,7 +147,7 @@ function clearTask(e) {
     // e.preventDefault();
 
     while (taskList.firstChild) {
-        taskList.removeChild(taskList.firstChild)
+        taskList.removeChild(taskList.firstChild);
         
     }
     // clear from LS
