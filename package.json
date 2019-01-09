@@ -1,0 +1,24 @@
+{
+  "name": "to-do-appp",
+  "version": "1.0.0",
+  "description": "to do app ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashypsoft/To-do-app_vanilajs.git"
+  
+  },
+  "keywords": [
+    "todoapp",
+    "app"
+  ],
+  "author": "ypsoft",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashypsoft/To-do-app_vanilajs/issues"
+  },
+  "homepage": "https://github.com/yashypsoft/To-do-app_vanilajs#readme"
+}
